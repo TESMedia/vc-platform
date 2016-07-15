@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<module>
+  <id>TLB.Payments</id>
+  <version>2.11.0</version>
+  <platformVersion>2.11.0</platformVersion>
+  <dependencies>
+    <dependency id="VirtoCommerce.Core" version="2.14.0" />
+  </dependencies>
+
+  <title>TLB Express Checkout</title>
+  <description>TLB express checkout payment integration</description>
+  <authors>
+    <author>Virto Commerce</author>
+  </authors>
+  <owners>
+    <owner>Virto Commerce</owner>
+  </owners>
+  <projectUrl>http://virtocommerce.com/</projectUrl>
+  <iconUrl>Modules/$(TLB.Payments)/Content/tlb.jpg</iconUrl>
+  <releaseNotes>First version.</releaseNotes>
+  <copyright>Copyright © 2011-2016 Virto Commerce. All rights reserved</copyright>
+  <tags>TLB bank cards payment gateway</tags>
+
+  <assemblyFile>TLB.Payments.dll</assemblyFile>
+  <moduleType>TLB.Payments.Module,TLB.Payments</moduleType>
+
+  <settings>
+    <group name="Payment methods|TLB.Payments|Payment">
+      <setting>
+        <name>TLB.Payments.ID</name>
+        <valueType>string</valueType>
+        <title>ID</title>
+        <description>TLBPayments  login id </description>
+      </setting>
+
+      <setting>
+        <name>TLB.Payments.Points</name>
+        <valueType>string</valueType>
+        <title>Points</title>
+        <description>TLBPayments Points</description>
+      </setting>
+    </group>
+  </settings>
+</module>
