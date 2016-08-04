@@ -71,7 +71,7 @@ namespace TLB.Payments.Managers
                     context.Payment.OuterId = context.Payment.Number;
                     context.Payment.CapturedDate = DateTime.UtcNow;
                     HttpClient client = new HttpClient();
-                    client.BaseAddress = new Uri("http://tlsnewapp.azurewebsites.net/");
+                    client.BaseAddress = new Uri("http://tlsnewmyweb.azurewebsites.net/");
                     client.DefaultRequestHeaders.Accept.Clear();
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                     HttpResponseMessage response = client.GetAsync("api/TLSMobileAuthentication/getallpoints?Email=" + Email + "&point=" + Convert.ToInt32(context.Order.Sum)).Result;
